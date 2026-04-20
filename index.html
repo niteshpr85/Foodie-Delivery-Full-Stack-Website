@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <!-- Header Part -->
+     <header>
+        <nav class="navbar flex between wrapper">
+            <a href="#" class="logo">Foodie.</a>
+            <!-- Desktop Menu -->
+            <ul class="navlist flex gap-3">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><button type="button" class="nav-button" onclick="showCartModal()">Order</button></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="desktop-action flex gap-2">
+            <a href="#"  class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-value">0</span>
+            </a>
+
+            <a href="#" class="btn">
+                Sign in
+                &nbsp;
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </a>
+
+            <a href="#" class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </a> 
+                
+               
+            </div>
+            <!-- Mobile Menu -->
+              <ul class="mobile-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><button type="button" class="nav-button" onclick="showCartModal()">Order</button></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                     <a href="#" class="btn">
+                Sign in
+                &nbsp;
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </a>
+                </li>
+            </ul>
+        </nav>
+
+
+     </header>
+    <!-- Section Part -->
+     <main>
+        <section id="hero">
+            <div class="hero-section flex wrapper gap-4">
+                <div class="content">
+                    <h1>Enjoy Your Delecious <span>food</span></h1>
+                    <p  class="para">We will fill your tummy with delicious<br>
+
+food with fast delivery.</p>
+            <div class="flex gap-2">
+                    <a href="#" class="btn">
+                        Order Now
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+            </div>
+
+                </div>
+                <div class="image-container">
+                    <img src="images/delivery-boy.png">
+
+                </div>
+
+            </div>
+        </section>
+        <section id="services">
+            <div class="wrapper p-top">
+                <div class="text-center">
+                    <h5>Our Services</h5>
+                    <h2>How does it work?</h2>
+
+                </div>
+                <div class="flex text-center mt-4">
+                <div class="service-card" >
+                    <div class="images-container">
+                        <img src="images/easy-to-order.png">
+                    </div>
+                    <h3>Easy to Order</h3>
+                    <P >YOU ONLY NEED A FEW STEPS IN ORDERING FOOD.</P>
+
+                </div>
+                <div class="service-card">
+                    <div class="images-container">
+                        <img src="images/fast-delivery.png">
+                    </div>
+                    <h3>Fast delivery</h3>
+                    <P >Delivery that is always ontime even faster</P>
+
+                </div>
+                 <div class="service-card" >
+                    <div class="images-container">
+                        <img src="images/best-quality.png">
+                    </div>
+                    <h3>Best Quality</h3>
+                    <P >Not only fast for us in quality is also number one</P>
+
+                </div>
+
+               
+
+
+            </div>
+        </section>
+        <section id="menu">
+            <div class="wrapper p-top">
+                 <div class="text-center">
+                    <h5>Our Menu</h5>
+                    <h2>The Most Popular</h2>
+
+                </div>
+                <div class="card-list text-center flex mt-4 gap-2">
+                    <div class="order-card" data-item='{"id":1,"name":"Double Beef Burger","price":200,"img":"burger.png"}'>
+                        <div class="card-image">
+                            <img src="images/burger.png">
+                        </div>
+                        <h4>Double Beef Burger</h4>
+                        <h4 class="price">$200</h4>
+                        <button class="btn add-to-cart">Add to cart</button>
+                    </div>
+                    <div class="order-card" data-item='{"id":2,"name":"Margherita Pizza","price":250,"img":"pizza.png"}'>
+                        <div class="card-image">
+                            <img src="images/pizza.png">
+                        </div>
+                        <h4>Margherita Pizza</h4>
+                        <h4 class="price">$250</h4>
+                        <button class="btn add-to-cart">Add to cart</button>
+                    </div>
+                    <div class="order-card" data-item='{"id":3,"name":"Fried Chicken","price":180,"img":"fried-chicken.png"}'>
+                        <div class="card-image">
+                            <img src="images/fried-chicken.png">
+                        </div>
+                        <h4>Fried Chicken</h4>
+                        <h4 class="price">$180</h4>
+                        <button class="btn add-to-cart">Add to cart</button>
+                    </div>
+                    <div class="order-card" data-item='{"id":4,"name":"Lasagna","price":220,"img":"lasagna.png"}'>
+                        <div class="card-image">
+                            <img src="images/lasagna.png">
+                        </div>
+                        <h4>Lasagna</h4>
+                        <h4 class="price">$220</h4>
+                        <button class="btn add-to-cart">Add to cart</button>
+                    </div>
+                    <div class="order-card" data-item='{"id":5,"name":"Club Sandwich","price":150,"img":"sandwich.png"}'>
+                        <div class="card-image">
+                            <img src="images/sandwich.png">
+                        </div>
+                        <h4>Club Sandwich</h4>
+                        <h4 class="price">$150</h4>
+                        <button class="btn add-to-cart">Add to cart</button>
+                    </div>
+                    <div class="order-card" data-item='{"id":6,"name":"Spaghetti","price":190,"img":"spaghetti.png"}'>
+                        <div class="card-image">
+                            <img src="images/spaghetti.png">
+                        </div>
+                        <h4>Spaghetti</h4>
+                        <h4 class="price">$190</h4>
+                        <button class="btn add-to-cart">Add to cart</button>
+                    </div>
+                    <div class="order-card" data-item='{"id":7,"name":"Chicken Roll","price":170,"img":"chicken-roll.png"}'>
+                        <div class="card-image">
+                            <img src="images/chicken-roll.png">
+                        </div>
+                        <h4>Chicken Roll</h4>
+                        <h4 class="price">$170</h4>
+                        <button class="btn add-to-cart">Add to cart</button>
+                    </div>
+                    <div class="order-card" data-item='{"id":8,"name":"Spring Roll","price":160,"img":"spring-roll.png"}'>
+                        <div class="card-image">
+                            <img src="images/spring-roll.png">
+                        </div>
+                        <h4>Spring Roll</h4>
+                        <h4 class="price">$160</h4>
+                        <button class="btn add-to-cart">Add to cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="reviews" class="wrapper p-top">
+          <div class="text-center">
+            <h5>Customer Reviews</h5>
+            <h2>What People Are Saying</h2>
+          </div>
+          <div class="flex review-grid gap-3 mt-4">
+            <div class="review-card">
+              <div class="profile">
+                <img src="images/profile1.jpeg" alt="Jon Vany">
+              </div>
+              <h4>Jon Vany</h4>
+              <div class="stars">★★★★★</div>
+              <p>Foodie is the best. Besides the many delicious meals, the service is also very good, especially very fast delivery. I highly recommend Foodie to you.</p>
+            </div>
+            <div class="review-card">
+              <div class="profile">
+                <img src="images/profile2.jpeg" alt="Sarah Lee">
+              </div>
+              <h4>Sarah Lee</h4>
+              <div class="stars">★★★★★</div>
+              <p>Great food and super quick delivery! The quality is top-notch every time. Love Foodie!</p>
+            </div>
+            <div class="review-card">
+              <div class="profile">
+                <img src="images/profile3.jpeg" alt="Mike Johnson">
+              </div>
+              <h4>Mike Johnson</h4>
+              <div class="stars">★★★★★</div>
+              <p>Easy ordering and best quality food. Delivery boy is polite and on time. Highly satisfied!</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="wrapper p-top">
+          <div class="text-center">
+            <h5>About Us</h5>
+            <h2>Our Story</h2>
+          </div>
+          <div class="flex gap-4 mt-4 about-grid">
+            <div class="about-content">
+              <p>Foodie started with a simple idea: deliver restaurant-quality meals fast and fresh to your door. Today, we're the city's favorite food delivery service.</p>
+              <p>Our team of passionate chefs and dedicated delivery partners ensure every order is perfect.</p>
+              <ul class="about-features">
+                <li>✅ 100+ Restaurants Partnered</li>
+                <li>✅ 30-Min Average Delivery</li>
+                <li>✅ 24/7 Customer Support</li>
+              </ul>
+            </div>
+            <div class="about-image">
+              <img src="images/mobile-app.png" alt="About Foodie">
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="wrapper p-top">
+          <div class="text-center">
+            <h5>Contact Us</h5>
+            <h2>Get In Touch</h2>
+          </div>
+          <div class="flex gap-4 mt-4 contact-grid">
+            <div class="contact-form">
+              <form id="contactForm">
+                <input type="text" id="contactName" placeholder="Your Name" required>
+                <input type="email" id="contactEmail" placeholder="Your Email" required>
+                <textarea id="contactMessage" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+              </form>
+            </div>
+            <div class="contact-info">
+              <h4>Visit Us</h4>
+              <p>123 Food Street<br>City, State 12345</p>
+              <h4>Call Us</h4>
+              <p>+1 234 567 890</p>
+              <h4>Email</h4>
+              <p>info@foodie.com</p>
+              <h4>Hours</h4>
+              <p>Everyday 10AM - 11PM</p>
+            </div>
+          </div>
+        </section>
+      </main>
+     
+     <!-- Cart Modal -->
+     <div id="cartModal" class="modal">
+       <div class="modal-content">
+         <span class="close">&times;</span>
+         <h2>Your Cart</h2>
+         <div id="cartItemsList"></div>
+         <div class="cart-total">
+           <span>Total: $<span id="cartTotal">0</span></span>
+         </div>
+         <button id="checkoutBtn" class="btn" style="width: 100%; margin-top: 1rem;">Checkout</button>
+       </div>
+     </div>
+     
+     <!-- Order Modal -->
+     <div id="orderModal" class="modal">
+       <div class="modal-content">
+         <span class="close">&times;</span>
+         <h2>Place Your Order</h2>
+         <form id="orderForm">
+           <input type="text" id="customerName" placeholder="Full Name" required>
+           <input type="tel" id="customerPhone" placeholder="Phone Number" required>
+           <textarea id="customerAddress" placeholder="Delivery Address" required></textarea>
+           <select id="paymentMethod" required>
+             <option value="">Select Payment</option>
+             <option value="cod">Cash on Delivery</option>
+             <option value="card">Credit Card</option>
+           </select>
+           <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Place Order</button>
+         </form>
+       </div>
+     </div>
+     <!-- Footer Part -->
+        <footer>
+            <div class="wrapper">
+              <div class="footer-content flex gap-4">
+                <div class="footer-brand">
+                  <h3>Foodie.</h3>
+                  <p>Enjoy delicious food with fast delivery.</p>
+                  <div class="social-icons flex gap-2">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                  </div>
+                </div>
+                <div>
+                  <h4>Quick Links</h4>
+                  <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Contact</h4>
+                  <p>Phone: +1 234 567 890</p>
+                  <p>Email: info@foodie.com</p>
+                </div>
+              </div>
+              <div class="copyright text-center">
+                <p>&copy; 2024 Foodie. All rights reserved.</p>
+              </div>
+            </div>
+        </footer>
+</body>
+</html>
