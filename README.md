@@ -2,6 +2,11 @@
 
 A responsive food delivery website with a Node.js/Express backend for handling orders and contact messages.
 
+<img width="1553" height="848" alt="Screenshot 2026-04-20 220428" src="https://github.com/user-attachments/assets/71e22b70-29a0-4e07-84f5-2ff9d91b43dc" />
+<img width="1600" height="864" alt="Screenshot 2026-04-20 220450" src="https://github.com/user-attachments/assets/cb083456-75fa-4c3c-8462-0339e9c1d91a" />
+
+
+
 ## Features
 
 - **Responsive Design**: Optimized for desktop and mobile devices
@@ -9,6 +14,14 @@ A responsive food delivery website with a Node.js/Express backend for handling o
 - **Contact Form**: Submit messages that are saved on the backend
 - **Order Management**: Place orders and store them in JSON files
 - **Simple API**: RESTful endpoints for orders and messages
+
+
+
+https://github.com/user-attachments/assets/0a77422d-d26d-49eb-848d-065ba0bbc0d2
+
+
+
+
 
 ## Technologies Used
 
